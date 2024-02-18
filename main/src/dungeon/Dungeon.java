@@ -16,8 +16,8 @@ public class Dungeon {
 
         for (int i = 0; i < numberOfRooms; i++) {
             // Ajoutez des pièces et initialisez les monstres ici selon les règles spécifiées.
-            // Exemple : rooms.add(new Room(i, determineMonsterType(i)));
-            rooms.add(new Room(i)); // Vous devez implémenter la logique pour déterminer le type de monstre.
+           
+            rooms.add(new Room(i)); 
         }
 
         if (displayCreationInfo) {
@@ -25,18 +25,15 @@ public class Dungeon {
         }
     }
 
-    // Méthode pour afficher les informations de création des pièces et des monstres.
     private void displayCreationInfo() {
-        // Implémentez la logique pour afficher les informations de création ici.
         for (Room room : rooms) {
             System.out.println("Room " + room.getNumber() + ": " + room.getMonsterType());
         }
     }
 
     public void greetHeros(Hero hero) {
-        // Implémentez la logique d'introduction et de commencement du jeu ici.
         System.out.println("Welcome, hero!");
     }
 
-    // ... Autres méthodes et logique du donjon ...
+    // donjon a mettre 
 }

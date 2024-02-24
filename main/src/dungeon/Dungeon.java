@@ -18,24 +18,28 @@ public class Dungeon {
         this.rooms = new ArrayList<>();
         this.displayCreationInfo = displayCreationInfo;
 
-        for (int i = 0; i < numberOfRooms; i++) {
+        for (int i = 0; i < numberOfRooms; i++) 
+        {
             // Ajoutez des pièces et initialisez les monstres ici selon les règles spécifiées.
            
             rooms.add(new Room(i)); 
         }
 
-        if (displayCreationInfo) {
+        if (displayCreationInfo) 
+        {
             displayCreationInfo();
         }
     }
 
-    private void displayCreationInfo() {
+    private void displayCreationInfo() 
+    {
         for (Room room : rooms) {
             System.out.println("Room " + room.getNumber() + ": " + room.getMonsterType());
         }
     }
 
-    public void greetHeros(Hero hero) {
+    public void greetHeros(Hero hero) 
+    {
         System.out.println("Welcome, hero!");
     }
 

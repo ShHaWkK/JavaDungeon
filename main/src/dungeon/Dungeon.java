@@ -1,10 +1,14 @@
 package dungeon;
 
+//------------ IMPORT ------------//
 import java.util.ArrayList;
 import java.util.List;
-
 import entities.Room;
+
+
 //import entities.Hero;
+
+//------------ CLASS  ------------//
 public class Dungeon {
     private List<Room> rooms;
     private boolean displayCreationInfo;
